@@ -27,5 +27,5 @@ signUpBtn.addEventListener('click', async () => {
 })
 
 document.getElementById('signUpWithGoogle').addEventListener('click', ()=>{
-    location.href = "http://localhost:3011/auth/google"
+    location.href = "http://https://manish301107.github.io/trackit/client/auth/google"
 })

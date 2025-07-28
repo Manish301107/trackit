@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>document.documentElement.classList.add('js')</script>
+</head>
+
+<body class="flex">
+
+
+    <div class="left_demo flex justify-between bg-black h-[100vh] w-full text-white">
+
+        <div class="relative w-7/12 bg-black">
+            <div class="bg-[url(../image/greenCircle.png)] bg-cover z-10 absolute -inset-1 blur-3xl w-full"></div>
+            <div class="h-[100vh] w-full flex justify-center items-center relative z-20">
+                <div class="flex w-6/12 flex-col
+         justify-center items-center">
+                    <img src="../image/logowithbox.png" class="w-20 p-0.5 px-1 bg-white rounded">
+                    <p class="font-medium mt-5 text-4xl">Get Started with Us</p>
+                    <p class="text-neutral-400 w-10/12 text-xs text-center mt-2">Register yourself to get the benifit of
+                        all
+                        features like Traking, and Express delivery.</p>
+                    <button
+                        class="flex items-center p-3 px-4 bg-white rounded text-black w-10/12 font-medium text-[0.8rem] mt-12">
+                        <div class="rounded-full h-4 w-4 bg-black text-[.6rem] p-0.5 text-white mr-2 items-center">1
+                        </div>
+                        Sign up your account
+                    </button>
+                    <button
+                        class="flex items-center p-3 px-4 hover:bg-white bg-neutral-900 rounded hover:text-black text-neutral-100 w-10/12 font-medium text-[0.8rem] mt-3">
+                        <div
+                            class="rounded-full h-4 w-4 bg-neutral-800 text-[.6rem] p-0.5 hover:text-white text-slate-100 mr-2">
+                            2</div> Login to your workspace
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <section class="h-[96vh] bg-white rounded-l-2xl w-5/12 z-20 mt-6 overflow-hidden">
+            <section class="bg-gray-50 dark:bg-gray-900">
+                <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
+                    <!-- <a href="#" class="flex items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white">
+                        <img class="w-8 h-8 mr-2" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/logo.svg" alt="logo">
+                        Flowbite    
+                    </a> -->
+                    <div class="w-full rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0">
+                        <div class="p-5">
+                            <h1 class="text-3xl font-bold leading-tight tracking-tight text-gray-900 dark:text-white">
+                                Sign Up Account
+                            </h1>
+                            <p class="text-gray-400 text-xs space-y-2 mt-1">Start your tracking in seconds. Already have an
+                                account? <a href="#" class="text-green-500">Login here.</a></p>
+
+                                <div class="authViaGoogle flex gap-4 mt-5">
+                                    <button type=""
+                                       id="signUpWithGoogle" class="flex items-center w-full border font-semibold text-black bg-white hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-green-300 rounded-lg text-sm px-5 py-2.5 text-center dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">
+                                    <img src="../image/googlelogo.webp" class="w-5 mx-2"> Google
+                                    </button>
+                                    <button type=""
+                                        class="flex items-center w-full border font-semibold text-black bg-white hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-green-300 rounded-lg text-sm px-5 py-2.5 text-center dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800 cursor-not-allowed" disabled>
+                                    <img src="../image/Facebook_Logo_(2019).png.webp" class="w-4 mx-2"> Facebook
+                                    </button>
+                                </div>
+                                <form class="space-y-4 md:space-y-4 text-sm mt-2" action="#" method="post">
+
+                                <div class="inline-flex items-center justify-center w-full -my-5">
+                                    <hr class="w-72 h-px bg-gray-400 border-0 dark:bg-gray-700">
+                                    <span class="-translate-x-40 bg-white text-black px-1">or</span>
+                                </div>
+                                <div class="flex gap-4">
+                                    <div>
+                                        <label for="FirstName"
+                                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">First
+                                            Name</label>
+                                        <input type="text" name="FirstName" id="FirstName"
+                                            class="bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-green-600 focus:border-green-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                            placeholder="Aatharv">
+                                    </div>
+                                    <div>
+                                        <label for="LastName"
+                                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Last
+                                            Name</label>
+                                        <input type="text" name="LastName" id="LastName"
+                                            class="bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-green-600 focus:border-green-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                            placeholder="Jain">
+                                    </div>
+                                </div>
+                                <div>
+                                    <label for="email"
+                                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your
+                                        email</label>
+                                    <input type="email" name="email" id="email"
+                                        class="bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-green-600 focus:border-green-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                        placeholder="name@company.com">
+                                </div>
+                                <div>
+                                    <label for="password"
+                                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Password</label>
+                                    <input type="password" name="password" id="password" placeholder="••••••••"
+                                        class="bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-green-600 focus:border-green-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                        required>
+                                </div>
+                                <div class="flex items-start">
+                                    <div class="flex items-center h-5">
+                                        <input id="terms" aria-describedby="terms" type="checkbox"
+                                            class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-green-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-green-600 dark:ring-offset-gray-800" required>
+                                    </div>
+                                    <div class="ml-3 text-sm">
+                                        <label for="terms" class="font-light text-gray-500 dark:text-gray-300 text-xs">By
+                                            signing up, you are creating a Trackit account, and you agree to Trackit's
+                                            <a class="font-medium text-green-600 hover:underline dark:text-green-500"
+                                                href="#">Terms and Conditions</a> and <a
+                                                class="font-medium text-green-600 hover:underline dark:text-green-500"
+                                                href="#">Privacy Policy.</a></label>
+                                    </div>
+                                </div>
+                                <button type="submit"
+                                  id="signUpBtn"  class="w-full text-white bg-green-500 hover:bg-green-600 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Sign
+                                    up</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
